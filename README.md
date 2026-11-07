@@ -4,8 +4,12 @@
 control centre for the Mac: cleaning, storage, apps, system tuning and security.
 
 ```bash
-brew install --cask fixerhack/unimachub/unimachub
+brew tap fixerhack/unimachub
+brew trust fixerhack/unimachub
+brew install --cask unimachub
 ```
+
+Homebrew loads casks from a tap outside its own only after `brew trust`.
 
 Update with `brew upgrade unimachub`, remove with `brew uninstall unimachub`
 (add `--zap` to also delete its settings and history).
