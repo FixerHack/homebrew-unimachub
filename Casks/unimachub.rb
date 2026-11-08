@@ -1,8 +1,8 @@
 cask "unimachub" do
-  version "0.9.0"
-  sha256 "af4cbbd0b2eb2b012c850d4e7ed634af58120a1b0d0402946803f32815f1a967"
+  version "0.10.0"
+  sha256 "73876dfd4f1f8b067e6a047304a138d03bfe55cf68676f5d590c43e4d9ea7989"
 
-  url "https://github.com/FixerHack/MacUtil/releases/download/v#{version}/MacUtil-#{version}.zip"
+  url "https://github.com/FixerHack/MacUtil/releases/download/v#{version}/UniMacHub-#{version}.zip"
   name "UniMacHub"
   desc "Control centre for cleaning, storage, apps, system tuning and security"
   homepage "https://github.com/FixerHack/MacUtil"
@@ -16,9 +16,7 @@ cask "unimachub" do
   auto_updates true
   depends_on macos: :sonoma
 
-  # 0.9.0 was the last release under the old name. Installing it under the new one means
-  # its built-in updater looks for UniMacHub.app in the next release, which is what is there.
-  app "MacUtil.app", target: "UniMacHub.app"
+  app "UniMacHub.app"
 
   zap trash: [
     "~/Library/Application Support/MacUtil",
