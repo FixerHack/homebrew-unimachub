@@ -1,6 +1,6 @@
 cask "unimachub" do
-  version "0.10.4"
-  sha256 "bf308da928bf473fffe771caf7b6e5ca535f55365de589f99137a87954579ca3"
+  version "0.10.5"
+  sha256 "33f96ec8632ba0374888501220765c7023563e624936039734215e72952ac25b"
 
   url "https://github.com/FixerHack/MacUtil/releases/download/v#{version}/UniMacHub-#{version}.zip"
   name "UniMacHub"
